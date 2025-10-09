@@ -12,13 +12,12 @@ class MainActivityFragment1 : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_fragment1)
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.top, CounterFragment())
-            .replace(R.id.bottom, ColorFragment())
-            .commit()
-
-        // Mise en place de la toolbar
-        //setSupportActionBar(binding.topAppBar)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.top, CounterFragment())
+                .replace(R.id.bottom, CounterFragment())
+                .commit()
+        }
     }
 
 
