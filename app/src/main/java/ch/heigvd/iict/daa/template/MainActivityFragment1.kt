@@ -11,6 +11,9 @@ class MainActivityFragment1 : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_fragment1)
+
+        setSupportActionBar(findViewById(R.id.toolbar))
+
 // Manually set in the layout now
 //        if (savedInstanceState == null) {
 //            supportFragmentManager.beginTransaction()
