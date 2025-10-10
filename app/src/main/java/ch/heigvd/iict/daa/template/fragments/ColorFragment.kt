@@ -83,10 +83,10 @@ class ColorFragment : Fragment() {
 
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        //outState.putInt(ARG_HEX_COLOR, color)
-    }
+//    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//        //outState.putInt(ARG_HEX_COLOR, color)
+//    }
 
     companion object {
         @JvmStatic
