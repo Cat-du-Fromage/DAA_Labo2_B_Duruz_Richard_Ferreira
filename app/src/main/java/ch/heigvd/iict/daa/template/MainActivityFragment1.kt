@@ -11,13 +11,13 @@ class MainActivityFragment1 : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_fragment1)
-
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.top, CounterFragment())
-                .replace(R.id.bottom, CounterFragment())
-                .commit()
-        }
+// Manually set in the layout now
+//        if (savedInstanceState == null) {
+//            supportFragmentManager.beginTransaction()
+//                .replace(R.id.top, ColorFragment())
+//                .replace(R.id.bottom, CounterFragment())
+//                .commit()
+//        }
     }
 
 
