@@ -22,7 +22,7 @@ class MainActivityPart1 : BaseActivityPart1()
     private lateinit var editBtn: Button;
 
     private var username: String? = null;
-
+    private var usernameBeforeEdit: String? = null
     companion object
     {
         const val STATE_KEY_USERNAME = "@part1Welcome/username";
@@ -35,7 +35,7 @@ class MainActivityPart1 : BaseActivityPart1()
      */
     private val editActivityIntent = registerForActivityResult(UsernameEditContract())
     {
-        username = it;
+        username = it ?: usernameBeforeEdit
         updateUsername();
     }
 
@@ -53,7 +53,10 @@ class MainActivityPart1 : BaseActivityPart1()
         editBtn = findViewById(R.id.button_edit_name);
         username = savedInstanceState?.getString(STATE_KEY_USERNAME);
         updateUsername();
-        editBtn.setOnClickListener { editActivityIntent.launch(username); }
+        editBtn.setOnClickListener {
+            usernameBeforeEdit = username;
+            editActivityIntent.launch(username);
+        }
     }
 
     /**
