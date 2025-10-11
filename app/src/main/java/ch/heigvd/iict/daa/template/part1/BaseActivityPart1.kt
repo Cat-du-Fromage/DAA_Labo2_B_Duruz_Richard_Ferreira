@@ -4,44 +4,44 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
-open class BaseActivityPart1 : AppCompatActivity()
+abstract class BaseActivityPart1 : AppCompatActivity()
 {
     // gets the simple name of the actual activity instance
     private val tag: String get() = this::class.java.simpleName;
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
-        super.onCreate(savedInstanceState);
         Log.d(tag, "onCreate Invoked");
+        super.onCreate(savedInstanceState);
     }
 
     override fun onStart()
     {
-        super.onStart();
         Log.d(tag, "onStart Invoked");
+        super.onStart();
     }
 
     override fun onResume()
     {
-        super.onResume();
         Log.d(tag, "onResume Invoked");
+        super.onResume();
     }
 
     override fun onPause()
     {
-        super.onPause();
         Log.d(tag, "onPause Invoked");
+        super.onPause();
     }
 
     override fun onStop()
     {
-        super.onStop();
         Log.d(tag, "onStop Invoked");
+        super.onStop();
     }
 
     override fun onDestroy()
     {
-        super.onDestroy();
         Log.d(tag, "onDestroy Invoked");
+        super.onDestroy();
     }
 }

@@ -4,4 +4,6 @@
     <string name="welcome_anonymous_message_part1"> Bienvenue, veuillez entrer un nom </string>
     <string name="welcome_message_part1"> Bienvenue %s !</string>
     <string name="editer_part1">EDITER</string>
+    <string name="enter_name">Entrez votre nom</string>
+    <string name="save">SAUVER</string>
 </resources>

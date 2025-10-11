@@ -1,20 +1,18 @@
 package ch.heigvd.iict.daa.template.part1
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import ch.heigvd.iict.daa.template.R
 
-class InputNameActivity: BaseActivityPart1()
+class EditActivityPart1 : BaseActivityPart1()
 {
-
-    private lateinit var usernameInput: EditText
-    private lateinit var saveButton: Button
+    private lateinit var usernameInput: EditText;
+    private lateinit var saveButton: Button;
 
     companion object
     {
-        const val USERNAME_KEY = "@inputName/username";
+        const val USERNAME_KEY = "@part1Edit/username";
     }
 
     override fun onCreate(savedInstanceState: Bundle?)
@@ -23,8 +21,9 @@ class InputNameActivity: BaseActivityPart1()
         setContentView(R.layout.activity_edit_part1);
         usernameInput = findViewById(R.id.edit_text_name);
         saveButton = findViewById(R.id.button_save);
+
         usernameInput.setText(intent.getStringExtra(USERNAME_KEY));
-        saveButton.setOnClickListener { closeActivity(); }
+        saveButton.setOnClickListener { closeActivity() }
     }
 
     /**
@@ -42,5 +41,4 @@ class InputNameActivity: BaseActivityPart1()
     {
         return usernameInput.text.toString().trim();
     }
-
 }
