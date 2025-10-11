@@ -3,21 +3,23 @@ package ch.heigvd.iict.daa.template.part1
 import android.widget.Button
 import android.widget.TextView
 import android.os.Bundle
-import androidx.activity.viewModels
 import ch.heigvd.iict.daa.template.R
 
+/**
+ * Activity 1 : Welcome Section that welcome the user with the username saved
+ * @author Duruz Florian
+ * @author Ferreira Silva Sven
+ * @author Richard Aurélien
+ */
 class MainActivityPart1 : BaseActivityPart1()
 {
     private lateinit var welcomeLabel: TextView;
-    private lateinit var editButton: Button;
+    private lateinit var editBtn: Button;
 
     private var username: String? = null;
 
-    private val userViewModel: UserViewModel by viewModels()
-
     companion object
     {
-        //const val STATE_KEY_USERNAME = "@welcome/username";
         const val STATE_KEY_USERNAME = "@part1Welcome/username";
     }
 
@@ -31,14 +33,11 @@ class MainActivityPart1 : BaseActivityPart1()
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_part1);
-
         welcomeLabel = findViewById(R.id.text_view_welcome_message);
-        editButton = findViewById(R.id.button_edit_name);
-
+        editBtn = findViewById(R.id.button_edit_name);
         username = savedInstanceState?.getString(STATE_KEY_USERNAME);
         updateUsername();
-        //Use to edit name
-        editButton.setOnClickListener { editActivityIntent.launch(username); }
+        editBtn.setOnClickListener { editActivityIntent.launch(username); }
     }
 
     override fun onSaveInstanceState(outState: Bundle)

@@ -5,6 +5,13 @@ import android.widget.Button
 import android.widget.EditText
 import ch.heigvd.iict.daa.template.R
 
+/**
+ * Activity 1 : Edit Section that allow the user to edit the username
+ * @author Duruz Florian
+ * @author Ferreira Silva Sven
+ * @author Richard Aurélien
+ */
+/*
 class EditActivityPart1 : BaseActivityPart1()
 {
     private lateinit var usernameInput: EditText;
@@ -21,15 +28,14 @@ class EditActivityPart1 : BaseActivityPart1()
         setContentView(R.layout.activity_edit_part1);
         usernameInput = findViewById(R.id.edit_text_name);
         saveButton = findViewById(R.id.button_save);
-
         usernameInput.setText(intent.getStringExtra(USERNAME_KEY));
-        saveButton.setOnClickListener { closeActivity() }
+        saveButton.setOnClickListener { close(); }
     }
 
     /**
      * Close the activity and return the username to the previous activity
      */
-    private fun closeActivity()
+    private fun close()
     {
         val data = Intent();
         data.putExtra(USERNAME_KEY, getUsername());
@@ -42,3 +48,4 @@ class EditActivityPart1 : BaseActivityPart1()
         return usernameInput.text.toString().trim();
     }
 }
+*/
