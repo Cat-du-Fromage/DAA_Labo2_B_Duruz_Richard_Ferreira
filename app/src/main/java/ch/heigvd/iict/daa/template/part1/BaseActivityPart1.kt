@@ -4,6 +4,12 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * Activity 1 : Permet le Log des divers événements de AppCompatActivity
+ * @author Duruz Florian
+ * @author Ferreira Silva Sven
+ * @author Richard Aurélien
+ */
 abstract class BaseActivityPart1 : AppCompatActivity()
 {
     // gets the simple name of the actual activity instance

@@ -8,7 +8,7 @@
     android:layout_margin="16dp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    tools:context=".part1.InputNameActivity">
+    tools:context=".part1.EditActivityPart1">
 
     <EditText
         android:id="@+id/edit_text_name"
