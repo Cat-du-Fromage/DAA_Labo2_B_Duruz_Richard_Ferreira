@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">DAA lab XX</string>
+    <string name="app_name">DAA lab 2</string>
     <string name="welcome">Welcome to DAA !</string>
+    <string name="stepper_back">Back</string>
+    <string name="stepper_close">Close</string>
+    <string name="stepper_next">Next</string>
+    <string name="stepper_text">Step</string>
 </resources>
