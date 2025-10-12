@@ -1,4 +1,4 @@
-# LAB 1 DAA
+# LAB 2 DAA
 ## Auteurs
 - Duruz Florian
 - Ferreira Silva Sven
