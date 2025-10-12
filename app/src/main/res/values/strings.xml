@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DAA lab XX</string>
+    <string name="app_name">DAA lab 2</string>
     <string name="welcome">Welcome to DAA !</string>
     <string name="welcome_anonymous_message_part1"> Bienvenue, veuillez entrer un nom </string>
     <string name="welcome_message_part1"> Bienvenue %s !</string>
