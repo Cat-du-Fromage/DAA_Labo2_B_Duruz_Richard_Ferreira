@@ -1,3 +1,11 @@
+/*
+StepperFragment.kt
+* This file models the stepper fragment for part 3
+Authors:
+* Duruz Florian
+* Ferreira Silva Sven
+* Richard Aurélien
+ */
 package ch.heigvd.iict.daa.template
 
 import android.os.Bundle

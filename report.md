@@ -7,7 +7,7 @@ Dans la méthode onCreate, on peut programmativement initialiser du code, dont l
 #### Comment pouvez-vous faire en sorte que votre implémentation supporte la rotation de l’écran ? Nous nous intéressons en particulier au maintien de l’état de la pile de Fragments et de l’étape en cours lors de la rotation.
 
 Grâce aux méthodes onSaveInstanceState et onViewStateRestored, on peut restaurer l'état des fragments lors de la rotation de l'écran.
-TODO: more details, implem horizontal POC
+Cependant, à cause de l'ordonnancement d'exécution des différentes méthodes (onCreate, onStart, onRestoreInstanceState...), et à l'instanciation assez rapide du premier fragment (lors de onCreate), il a été nécessaire de récupérer dans le paramètre savedInstanceState de onCreate la valeur sauvegardée du stepper, ceci afin d'éviter d'avoir le tout premier fragment instancié sur rotation.
 
 #### Dans une transaction sur le Fragment, quelle est la différence entre les méthodes add et replace ?
 
