@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">DAA lab 2</string>
     <string name="welcome">Welcome to DAA !</string>
+    <string name="stepper_back">Back</string>
+    <string name="stepper_close">Close</string>
+    <string name="stepper_next">Next</string>
+    <string name="stepper_text">Step</string>
     <string name="welcome_anonymous_message_part1"> Bienvenue, veuillez entrer un nom </string>
     <string name="welcome_message_part1"> Bienvenue %s !</string>
     <string name="editer_part1">EDITER</string>
