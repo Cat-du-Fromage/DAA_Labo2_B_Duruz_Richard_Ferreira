@@ -1,6 +1,6 @@
 # LAB 1 DAA
 ## Auteurs
-- Duruz Florain
+- Duruz Florian
 - Ferreira Silva Sven
 - Richard Aurélien
 
