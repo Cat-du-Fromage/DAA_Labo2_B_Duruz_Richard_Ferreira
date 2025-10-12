@@ -1,3 +1,11 @@
+/*
+MainActivityFragment1.kt
+* This file models the activity regarding the part 2
+Authors:
+* Duruz Florian
+* Ferreira Silva Sven
+* Richard Aurélien
+ */
 package ch.heigvd.iict.daa.template
 
 import android.os.Bundle
