@@ -16,7 +16,7 @@ Date : 12/10/2025
 ### Que se passe-t-il si l’utilisateur appuie sur « back » lorsqu’il se trouve sur la seconde Activité ?
 
 L'activité EditActivityPart1 se ferme sans sauvegarder les modifications; le résultat retourné à MainActivityPart1 est RESULT_CANCELED (pas RESULT_OK) et donc le username devient null.
-Pour y remédier on sauvegarder dans la classe le dernier username enregistré.
+Pour y remédier on sauvegarde dans la classe le dernier username enregistré.
 
 ![Description](imgs/Part1UML.png)
 
